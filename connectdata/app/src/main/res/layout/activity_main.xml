@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="ĐÈN ĐƯỜNG THÔNG MINH"
+            android:textColor="#000080"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:text="LED lúc trời tối"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#0000ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/ledNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="5.0"
+
+            android:valueFrom="0"
+            android:valueTo="100"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:text="LED khi có người hoặc có mưa lúc trời tối"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#0000ff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/ledYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="5.0"
+
+            android:valueFrom="0"
+            android:valueTo="100"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+
+            <TextView
+                android:id="@+id/isDarkOrNot"
+                android:textColor="#000080"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_width="200dp"
+                android:layout_height="162dp"
+                android:background="@drawable/weather_cartoon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:padding="2dp"
+                android:text="Trời sáng/tối?" />
+
+            <TextView
+                android:id="@+id/isRainOrNot"
+                android:textColor="#000080"
+                android:text="Trời mưa?"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_width="210dp"
+                android:layout_height="162dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/isDarkOrNot"
+                android:background="@drawable/img_1"
+                android:padding="2dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/anyBody"
+            android:textColor="#000080"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="244dp"
+            android:background="@drawable/img"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="Có người?" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSendData"
+                android:layout_width="200dp"
+
+                android:layout_height="match_parent"
+
+                android:text="SEND" />
+
+            <Button
+                android:id="@+id/btnGetData"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:text="REFRESH"
+                android:backgroundTint="#ff0000"
+
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

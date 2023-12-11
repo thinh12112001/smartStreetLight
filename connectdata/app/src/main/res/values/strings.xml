@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">connectdata</string>
+    <string name="h_v_t_n">Họ và Tên</string>
+    <string name="my_firt_app">MY FIRT APP</string>
+    <string name="hi_n_th">HIỂN THỊ</string>
+    <string name="tu_i">Tuổi</string>
+    <string name="s_t">Số ĐT</string>
+    <string name="y_data">đẩy data</string>
+</resources>
